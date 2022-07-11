@@ -1,0 +1,119 @@
+.image{
+    display: flex;
+    margin: auto;    
+    max-width: 400px;    
+}
+table, th, td {
+    
+    border:1px solid black;
+}
+.mainTitleContainer{
+    position: absolute;
+    top: 0px;
+    font-size: xx-large;
+    width: 100vw;
+    background-color: rgb(72, 131, 185);
+    margin: 0;
+
+}
+.tableContainer{
+    position: absolute;
+    top: 170px;
+    margin-left: auto;
+    flex-direction: row;
+    width: 800px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    Height: 100vh;
+    margin: 0;
+    
+}
+.commentSection{
+    position:absolute;
+    width: 800px;
+    top: 1380px
+}
+.messageBoardInputContainer{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    
+}
+.messageBoardContainer{
+    position: relative;
+    display: block;
+    float: right;
+    width: 50%;
+}
+
+.titleButton{
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 400px;
+}
+.colorButton{
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 450px;
+}
+.footerButton{
+    position: absolute;
+    display: flex;
+    top: 1580px;
+    left: 450px;
+}
+.linkButton{
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 545px;
+}
+.imgButton{
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 625px;
+}
+.priceButton{
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 720px;
+}
+
+.footerContainer{
+    position: absolute;
+    display: flex;
+    height: 200px;
+    top: 1500px;
+    font-size: xx-large;
+    width: 100vw;
+    background-color: rgb(72, 131, 185);
+    margin: 0;
+    z-index: -1;
+}
+.invisible{
+    visibility: hidden;
+}
+.visible
+{
+    visibility: visible;
+}
+.visibleImg
+{
+    visibility: visible;
+}
+.invisibleImg{
+    visibility: hidden;
+}
+.price{
+    color:blue;
+}

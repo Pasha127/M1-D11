@@ -5,90 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="mainTitleContainer">
-        <h1>Galaxy.Shop</h1>
+        <h1 id="mainTitleText">Galaxy.Shop</h1>        
     </div>
-    <div class="tableContainer">
+    <div class="buttonPanel">
+        <button class="titleButton button" onclick="titleChanger()"> Title</button>
+        <button class="colorButton button" onclick="bkgdColorChanger()"> Background</button>
+        <button class="footerButton button" onclick="footerChanger()"> Footer</button>
+        <button class="linkButton button" onclick="linkChanger()"> Link CSS</button>
+        <button class="imgButton button" onclick="imgChanger()"> Image CSS</button>
+        <button class="priceButton button" onclick="priceColorChanger()"> Price CSS</button>
+    </div>
+    <table class="tableContainer">
         <tr class="phone01">
-            <th class="phoneName01">Samsung Galaxy S22</th><br>
-            <th class="phoneDescription01">Stats</th><br>
-            <th class="phonePrice01">price</th><br>
+            <th><a class="image">  
+                <img class="image01 visibleImg"  alt="S22"src="https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX355_.jpg" style="width: 200px;" />
+            </a> </th>
+            <th class="phoneName01">Samsung Galaxy S22</th>
+            <th class="phoneDescription01">6.1in, 120Hz, FHD+, AMOLED display.
+                Snapdragon 8 Gen 1 or Exynos 2200.
+                8GB RAM.
+                128/256GB storage.
+                3700mAh battery.
+                25W wired charging.
+                15W wireless charging.
+                Rear camera: 50Mp, f/1.8, OIS main camera. 12MP, f/2.2 ultra-wide camera. 10Mp, f/2.4, OIS 3x zoom telephoto camera.</th>
+            <th class="phonePrice01"><span class="price">$1,000</span> <a class="invisible" href="https://www.amazon.com/SAMSUNG-Smartphone-Unlocked-Brightest-Processor/dp/B09MVZSW5V/"><br><b>SHOP NOW</b></a></th>
 
         </tr>
         <tr class="phone02">
-            <th class="phoneName02">Samsung Galaxy S20</th><br>
-            <th class="phoneDescription02">Stats</th><br>
-            <th class="phonePrice02">price</th><br>
+            <th>
+                <a class="image" >  
+                    <img class="image01 visibleImg" alt="S20"src="https://m.media-amazon.com/images/I/61XsDK3-1hL._AC_SX679_.jpg" style="width: 200px;" />
+                </a> 
+            </th>
+            <th class="phoneName02">Samsung Galaxy S20</th>
+            <th class="phoneDescription02">Samsung Galaxy S20 ; Size, 6.2 inches, 93.8 cm2 (~89.5% screen-to-body ratio) ; Resolution, 1440 x 3200 pixels, 20:9 ratio (~563 ppi density) ; Protection, Corning ...
+                Weight: 163 g (5.75 oz)
+                Main Camera: Triple
+                Camera: Photo / Video
+                Internal: 128GB 8GB RAM</th>
+            <th class="phonePrice02"><span class="price">$900</span><a class="invisible" href="https://www.amazon.com/Samsung-Galaxy-S20-5G-Cosmic/dp/B08B8Y5R4Y/"><br><b>SHOP NOW</b></a></th>
         </tr>
         <tr class="phone03">
-            <th class="phoneName03">Samsung Galaxy S10</th><br>
-            <th class="phoneDescription03">Stats</th><br>
-            <th class="phonePrice03">price</th><br>
+            <th>
+                <a class="image" >  
+                    <img class="image01 visibleImg" alt="S10"src="https://m.media-amazon.com/images/I/61JribCT8NL._AC_SX679_.jpg" style="width: 200px;" />
+                </a> 
+            </th>
+            <th class="phoneName03">Samsung Galaxy S10</th>
+            <th class="phoneDescription03">Released. Mar 08, 2019.
+                Display. 6.1 inches. 3040 x 1440 pixels.
+                Camera. 12 MP (Triple camera) 10 MP front.
+                Hardware. Qualcomm Snapdragon 855. 8GB RAM.
+                Storage. 128GB, microSDXC.
+                Battery. 3400 mAh.
+                OS. Android 11. Samsung One UI.</th>
+            <th class="phonePrice03"><span class="price">$500</span><a class="invisible" href="https://www.amazon.com/Samsung-Galaxy-S10-G973U-Unlocked/dp/B09RX4N6JQ/"><br><b>SHOP NOW</b></a></th>
         </tr>
         <tr class="phone04">
-            <th class="phoneName04">Samsung Galaxy S7</th><br>
-            <th class="phoneDescription04">Stats</th><br>
-            <th class="phonePrice04">price</th><br>
+            <th>
+                <a class="image" >  
+                    <img class="image01 visibleImg" alt="Samsung-Galaxy-S10-G973U-Unlocked"src="https://m.media-amazon.com/images/I/51fEM6Qlw6L._AC_SX679_.jpg" style="width: 200px;" />
+                </a> 
+            </th>
+            <th class="phoneName04">Samsung Galaxy S7</th>
+            <th class="phoneDescription04">Processor: Snapdragon 820 Quad Core（MSM8996） · RAM: 4GB RAM · Storage: 32GB ROM · Display: 5.1 inch 2560×1440（Quad HD / 2K ） · Camera: Rare: 12MP+Front: 5MP.</th>
+            <th class="phonePrice04"><span class="price">$300</span><a class="invisible" href="https://www.amazon.com/Samsung-Galaxy-S7-32GB-Gold/dp/B087RHZ611/"><br><b>SHOP NOW</b></a></th>
         </tr>
         <tr class="phone05">
+            <th>
+                <a class="image" >  
+                <img class="image01 visibleImg" alt="S5"src="https://m.media-amazon.com/images/I/51Vu6Nz3ZWL._AC_.jpg" style="width: 200px;" />
+            </a> 
+            </th>
             <th class="phoneName05">Samsung Galaxy S5</th><br>
-            <th class="phoneDescription05">Stats</th><br>
-            <th class="phonePrice05">price</th><br>
+            <th class="phoneDescription05"> Display, 5.1" 1920x1080 Super AMOLED ; Rear Camera(s). 31mm 16-MP f/2.4 (Primary) ; Selfie Camera(s). 2-MP ; Computing.</th><br>
+            <th class="phonePrice05"><span class="price">$150</span><a class="invisible" href="https://www.amazon.com/Samsung-Galaxy-S5-White-16GB/dp/B00IZ1XJ3Q/"><br><b>SHOP NOW</b></a></th><br>
         </tr>
-    </div>
-    <div class="image01Container">
-        <div class="image01"> 
-            <a href="https://www.amazon.com/SAMSUNG-Smartphone-Unlocked-Brightest-Processor/dp/B09MVZSW5V/"> SAMSUNG Galaxy S22 Ultra</a> 
-            <img src="https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX355_.jpg"/>
-        </div>
-    </div>
-    <div class="image02Container">
-        <div class="image02"> 
-            <a href="https://www.amazon.com/Samsung-Galaxy-S20-5G-Cosmic/dp/B08B8Y5R4Y/"> Samsung Galaxy S20</a> 
-            <img src="https://m.media-amazon.com/images/I/61XsDK3-1hL._AC_SX679_.jpg"/>
-        </div>
-    </div>
-    <div class="image03Container">
-        <div class="image03"> 
-            <a href="https://www.amazon.com/Samsung-Galaxy-S10-G973U-Unlocked/dp/B09RX4N6JQ/"> Samsung Galaxy S10</a> 
-            <img src="https://m.media-amazon.com/images/I/61JribCT8NL._AC_SX679_.jpg"/>
-        </div>
-    </div>
-    <div class="image04Container">
-        <div class="image04"> 
-            <a href="https://www.amazon.com/Samsung-Galaxy-S7-32GB-Gold/dp/B087RHZ611/"> Samsung Galaxy S7</a> 
-            <img src="https://m.media-amazon.com/images/I/51fEM6Qlw6L._AC_SX679_.jpg"/>
-        </div>
-    </div>
-    <div class="image05Container">
-        <div class="image05"> 
-            <a href="https://www.amazon.com/Samsung-Galaxy-S5-White-16GB/dp/B00IZ1XJ3Q/"> Samsung Galaxy S5</a> 
-            <img src="https://m.media-amazon.com/images/I/51Vu6Nz3ZWL._AC_.jpg"/>
-        </div>
-    </div>
+    </table>
+   
     
+    
+    <div class="commentSection">
     <div class="messageBoardContainer">
-        <div class="topOfBoard">vvvvvvvvvvvvvvvvvvvvvvvv</div>
-        <div class="bottomOfBoard">^^^^^^^^^^^^^^^^^^^^^^^</div>
+        <div class="topOfBoard">vvvvvvvvvvvvvvvvv  Comment Section  vvvvvvvvvvvvvvvvv</div>
+        <div class="bottomOfBoard">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</div>
     </div>
     
     <div class="messageBoardInputContainer">
         <form action="/action_page.php">
             <label for="inputFieldLabel">Comment: </label>
-            <input type="text" class="inputField" ><br><br>
+            <!-- <input type="text" class="inputField" ><br><br> -->
+            <textarea type="text" class="inputField" rows="4" cols="45"></textarea>
             <input type="button" value="Submit" onclick="postComment()" >
           </form>
     </div>
-
-    <div class="footerContainer">FOOTER: Address, socials, and phone number here</div>
+    </div>
+    <div id="footer" class="footerContainer">
+        <h2>123 Business Street<br> @businessGram </h2></div>
     <script>
         let body = document.getElementsByTagName('body')[0];
         let commentContainer = document.getElementsByClassName('messageBoardContainer')[0];  
 
         const getValue = function (){
-            const inputValue = document.querySelector('input').value;
+            const inputValue = document.getElementsByClassName('inputField')[0].value;
             return inputValue;
             console.log(inputValue);
         }
@@ -102,9 +127,70 @@
             newComment.id = "newCommentid";
             commentContainer.insertBefore(newComment,bottomNode); 
         }
-        
-        
+        const titleChanger = function() {
+            let titleContent = document.getElementById('mainTitleText').innerText;
+            if(titleContent === "Galaxy.Shop"){
+                document.getElementById('mainTitleText').innerText = "Shop.Galaxy";
+            }else{
+                document.getElementById('mainTitleText').innerText = "Galaxy.Shop";
+            }
+            
+        }
+        document.getElementsByTagName('body')[0].style.backgroundColor = "white";
+        const bkgdColorChanger = function () {
+            /* document.getElementsByTagName('body')[0].backgroundColor = "white"; */
+            let bkgdColor = document.getElementsByTagName('body')[0].style.backgroundColor ;
+            if(bkgdColor === "white"){
+                document.getElementsByTagName('body')[0].style.backgroundColor = "black";
+            }else{
+                document.getElementsByTagName('body')[0].style.backgroundColor = "white";
+            }            
+        }
+        const footerChanger = function() {
+            let titleContent = document.getElementById('footer').innerText;
+            if(titleContent === "123 Business Street\n@businessGram"){
+                document.getElementById('footer').innerText = "321 Leisure Ave\n@TravelGram";
+            }else{
+                document.getElementById('footer').innerText = "123 Business Street\n@businessGram";
+            }            
+        }
+        const linkChanger = function () {                        
+                        const invisList = document.getElementsByClassName('invisible');
+            const visList = document.getElementsByClassName('visible');
+            if(visList.length === 0){
+                for(let i=0; i<invisList.length; i++){
+                    invisList[i].classList.add("visible");
+                }
+            }else{
+                for(let i=0; i<invisList.length; i++){
+                    invisList[i].classList.remove("visible");
+                }
+            }
+        }
+        const imgChanger = function () {                        
+            
+            const invisImgList = document.getElementsByClassName('invisibleImg');
+            const visImgList = document.getElementsByClassName('visibleImg');
+            if(invisImgList.length === 0){
+                for(let i=0; i<visImgList.length; i++){
+                    visImgList[i].classList.add("invisibleImg");
+                }
+            }else{
+                for(let i=0; i<visImgList.length; i++){
+                    visImgList[i].classList.remove("invisibleImg");
+                }
+            }            
+        }
+        const randomGen = function () {            
+            return Math.floor(Math.random() * 255);
+        }
+        const priceColorChanger = function () {                        
+            for(let i=0; i<document.getElementsByClassName('price').length ;i++){
+                document.getElementsByClassName('price')[i].style.color = `rgb(${randomGen()},${randomGen()},${randomGen()})`;                
+            } 
+        }
 
+        
     </script>
 </body>
 </html>
