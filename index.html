@@ -7,9 +7,104 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="Main Title">
-        <h1>"Smart.Shop"</h1>
+    <div class="mainTitleContainer">
+        <h1>Galaxy.Shop</h1>
+    </div>
+    <div class="tableContainer">
+        <tr class="phone01">
+            <th class="phoneName01">Samsung Galaxy S22</th><br>
+            <th class="phoneDescription01">Stats</th><br>
+            <th class="phonePrice01">price</th><br>
+
+        </tr>
+        <tr class="phone02">
+            <th class="phoneName02">Samsung Galaxy S20</th><br>
+            <th class="phoneDescription02">Stats</th><br>
+            <th class="phonePrice02">price</th><br>
+        </tr>
+        <tr class="phone03">
+            <th class="phoneName03">Samsung Galaxy S10</th><br>
+            <th class="phoneDescription03">Stats</th><br>
+            <th class="phonePrice03">price</th><br>
+        </tr>
+        <tr class="phone04">
+            <th class="phoneName04">Samsung Galaxy S7</th><br>
+            <th class="phoneDescription04">Stats</th><br>
+            <th class="phonePrice04">price</th><br>
+        </tr>
+        <tr class="phone05">
+            <th class="phoneName05">Samsung Galaxy S5</th><br>
+            <th class="phoneDescription05">Stats</th><br>
+            <th class="phonePrice05">price</th><br>
+        </tr>
+    </div>
+    <div class="image01Container">
+        <div class="image01"> 
+            <a href="https://www.amazon.com/SAMSUNG-Smartphone-Unlocked-Brightest-Processor/dp/B09MVZSW5V/"> SAMSUNG Galaxy S22 Ultra</a> 
+            <img src="https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX355_.jpg"/>
+        </div>
+    </div>
+    <div class="image02Container">
+        <div class="image02"> 
+            <a href="https://www.amazon.com/Samsung-Galaxy-S20-5G-Cosmic/dp/B08B8Y5R4Y/"> Samsung Galaxy S20</a> 
+            <img src="https://m.media-amazon.com/images/I/61XsDK3-1hL._AC_SX679_.jpg"/>
+        </div>
+    </div>
+    <div class="image03Container">
+        <div class="image03"> 
+            <a href="https://www.amazon.com/Samsung-Galaxy-S10-G973U-Unlocked/dp/B09RX4N6JQ/"> Samsung Galaxy S10</a> 
+            <img src="https://m.media-amazon.com/images/I/61JribCT8NL._AC_SX679_.jpg"/>
+        </div>
+    </div>
+    <div class="image04Container">
+        <div class="image04"> 
+            <a href="https://www.amazon.com/Samsung-Galaxy-S7-32GB-Gold/dp/B087RHZ611/"> Samsung Galaxy S7</a> 
+            <img src="https://m.media-amazon.com/images/I/51fEM6Qlw6L._AC_SX679_.jpg"/>
+        </div>
+    </div>
+    <div class="image05Container">
+        <div class="image05"> 
+            <a href="https://www.amazon.com/Samsung-Galaxy-S5-White-16GB/dp/B00IZ1XJ3Q/"> Samsung Galaxy S5</a> 
+            <img src="https://m.media-amazon.com/images/I/51Vu6Nz3ZWL._AC_.jpg"/>
+        </div>
     </div>
     
+    <div class="messageBoardContainer">
+        <div class="topOfBoard">vvvvvvvvvvvvvvvvvvvvvvvv</div>
+        <div class="bottomOfBoard">^^^^^^^^^^^^^^^^^^^^^^^</div>
+    </div>
+    
+    <div class="messageBoardInputContainer">
+        <form action="/action_page.php">
+            <label for="inputFieldLabel">Comment: </label>
+            <input type="text" class="inputField" ><br><br>
+            <input type="button" value="Submit" onclick="postComment()" >
+          </form>
+    </div>
+
+    <div class="footerContainer">FOOTER: Address, socials, and phone number here</div>
+    <script>
+        let body = document.getElementsByTagName('body')[0];
+        let commentContainer = document.getElementsByClassName('messageBoardContainer')[0];  
+
+        const getValue = function (){
+            const inputValue = document.querySelector('input').value;
+            return inputValue;
+            console.log(inputValue);
+        }
+        const postComment = function () {
+            const newComment = document.createElement('div');
+            const bottomNode = document.getElementsByClassName('bottomOfBoard')[0];
+            
+            newComment.innerText = getValue();
+            //newComment.style.boxShadow = "4px 4px 0px black";
+            newComment.className = "postedComment";
+            newComment.id = "newCommentid";
+            commentContainer.insertBefore(newComment,bottomNode); 
+        }
+        
+        
+
+    </script>
 </body>
 </html>
