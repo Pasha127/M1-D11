@@ -184,9 +184,10 @@
         const randomGen = function () {            
             return Math.floor(Math.random() * 255);
         }
-        const priceColorChanger = function () {                        
-            for(let i=0; i<document.getElementsByClassName('price').length ;i++){
-                document.getElementsByClassName('price')[i].style.color = `rgb(${randomGen()},${randomGen()},${randomGen()})`;                
+        const priceColorChanger = function () {  
+            let randomList = document.getElementsByClassName('price');                    
+            for(let i=0; i<randomList.length ;i++){
+                randomList[i].style.color = `rgb(${randomGen()},${randomGen()},${randomGen()})`;                
             } 
         }
 
